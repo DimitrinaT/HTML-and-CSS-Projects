@@ -1,0 +1,15 @@
+p {
+	color: black;
+	font-size: large;
+	text-align: center;
+	text-shadow: 1px 1px 2px #FF0000;
+}
+
+body {
+	 background-color: #fff9c4;
+}
+
+footer {
+	font-size: large;
+	text-align: center;
+}

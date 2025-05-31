@@ -1,0 +1,33 @@
+h1 {
+	font-size: 30px;
+	text-align: center;
+	font-family: "Segoe UI", sans-serif;
+	color: #2c3e50;
+}
+			
+table {
+	border-collapse: collapse;
+	width: 50%;
+	margin: 0 auto;
+	border: 3px solid silver;
+	background-color: #fafafa;
+}
+			
+th, td {
+	text-align: left;
+	font-family: "Segoe UI", sans-serif;
+	color: #333;
+	border: 1px solid #ccc;
+	padding: 12px;
+}
+
+th {
+	background-color: #e0e0e0;
+	color: #000;
+}
+
+tr:hover {
+	background-color: #d0e8ff;
+	cursor: pointer; 
+}
+		
