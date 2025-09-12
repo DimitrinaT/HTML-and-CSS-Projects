@@ -2,7 +2,6 @@
 
 This repository contains a collection of HTML and CSS projects created for practice and learning purposes. Each project demonstrates different web development concepts, layouts, and interactive features, showcasing my growing skills in web design and front-end development.
 
----
 
 ## Projects
 
@@ -10,7 +9,6 @@ This repository contains a collection of HTML and CSS projects created for pract
 - Space Station Site  
 - Cinema Site  
 
----
 
 ### One-Page Site
 
@@ -24,7 +22,6 @@ This project is a responsive website designed for booking space trips. The site 
 
 This project is a responsive website for a movie theater, designed using HTML, CSS, and Bootstrap 4. The site features a navigation bar linking to the About, Showtimes, and Deals sections. Visitors can learn about the theater's location, seating, and sound system, see the current movies playing with detailed showtimes, and sign up for a rewards program. The design focuses on a clean layout, easy navigation, and a user-friendly experience across both desktop and mobile devices. 
 
----
 
 ## Technologies Used
 
@@ -34,12 +31,5 @@ These projects were built using:
 - CSS3  
 - Bootstrap 4  
 - Embedded Multimedia Elements  
-
----
-
-## GitHub
-
-You can explore all the projects and view the code on my GitHub profile:
-https://github.com/DimitrinaT/HTML-and-CSS-Projects
 
 
