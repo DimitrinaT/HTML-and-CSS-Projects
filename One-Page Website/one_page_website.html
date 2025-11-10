@@ -1,84 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Design my Home</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="One_page_web.css">
-		<link rel="icon" href="./images/favicon.png" type="image/png">
-	</head>
-	
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Design my Home</title>
+  <link rel="stylesheet" href="./css/One_page_web.css">
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <script src="./JS/one_page_website.js" defer></script>
+</head>
 <body>
-	<header>
-		<p>
-			<em>Refreshing a room or transforming your whole home? Let's make it happen.</em>
-		</p>
-			<h3>Ideas and Insperation for</h3>
-		<nav>
-			<ul>
-				<li><a href="#living-room">Living Room</a></li>
-				<li><a href="#bedroom">Bedroom</a></li>
-				<li><a href="#kitchen">Kitchen</a></li>
-			</ul>
-		</nav>
-	</header>
+  <header>
+    <p><em>Refreshing a room or transforming your whole home? Let's make it happen.</em></p>
+    <h3>Ideas and Inspiration for</h3>
+    <nav>
+      <ul>
+        <li><a href="#living-room">Living Room</a></li>
+        <li><a href="#bedroom">Bedroom</a></li>
+        <li><a href="#kitchen">Kitchen</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>		
-	<section id="living-room">
-			<h4>Design your Living Room</h4>
-		<div class="gallery">
-			<img src="./images/living_room_1.jpg" alt="Modern living room" width="400">
-			<img src="./images/living_room_2.jpg" alt="Cozy living room" width="400">
-			<img src="./images/living_room_3.jpg" alt="Cozy living room" width="400">
-		</div>
-	</section>
+  <main>
+    <!-- Living Room -->
+    <section id="living-room">
+      <h4>Design your Living Room</h4>
+      <div class="gallery">
+        <img src="./images/living_room_1.jpg" alt="Modern living room" onclick="openModal();currentSlide(1)" class="thumb">
+        <img src="./images/living_room_2.jpg" alt="Cozy living room" onclick="openModal();currentSlide(2)" class="thumb">
+        <img src="./images/living_room_3.jpg" alt="Bright living room" onclick="openModal();currentSlide(3)" class="thumb">
+      </div>
+    </section>
 
-	<section id="bedroom">
-			<h4>Design your Bedroom</h4>
-		<div class="gallery">
-			<img src="./images/bedroom_1.jpg" alt="Elegant bedroom" width="400">
-			<img src="./images/bedroom_2.jpg" alt="Minimalist bedroom" width="400">
-			<img src="./images/bedroom_3.jpg" alt="Minimalist bedroom" width="400">
-		</div>
-	</section>
-	
-	<section id="kitchen">
-			<h4>Design your Kitchen</h4>
-		<div class="gallery">
-			<img src="./images/kitchen_1.jpg" alt="Stylish kitchen" width="400">
-			<img src="./images/kitchen_2.jpg" alt="Modern kitchen" width="400">
-			<img src="./images/kitchen_3.jpg" alt="Modern kitchen" width="400">
-		</div>
-	</section>
-		
-	<section>
-		<h4>Meet our Team</h4>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/hOWG-2MGzHk?si=CtC0cOWnyeC1itek" 
-			title="YouTube video player" 
-			frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			referrerpolicy="strict-origin-when-cross-origin" 
-			allowfullscreen></iframe>
-	</section>
-		
-	<section>
-		<h4>Contact Us</h4>
-			<form action="" method="post">
-				<input type="text" id="fname" name="fname" placeholder="First Name">
+    <!-- Bedroom -->
+    <section id="bedroom">
+      <h4>Design your Bedroom</h4>
+      <div class="gallery">
+        <img src="./images/bedroom_1.jpg" alt="Elegant bedroom" onclick="openModal();currentSlide(4)" class="thumb">
+        <img src="./images/bedroom_2.jpg" alt="Minimalist bedroom" onclick="openModal();currentSlide(5)" class="thumb">
+        <img src="./images/bedroom_3.jpg" alt="Cozy bedroom" onclick="openModal();currentSlide(6)" class="thumb">
+      </div>
+    </section>
 
-				<input type="email" id="email" name="email" placeholder="Emal">
+    <!-- Kitchen -->
+    <section id="kitchen">
+      <h4>Design your Kitchen</h4>
+      <div class="gallery">
+        <img src="./images/kitchen_1.jpg" alt="Stylish kitchen" onclick="openModal();currentSlide(7)" class="thumb">
+        <img src="./images/kitchen_2.jpg" alt="Modern kitchen" onclick="openModal();currentSlide(8)" class="thumb">
+        <img src="./images/kitchen_3.jpg" alt="Contemporary kitchen" onclick="openModal();currentSlide(9)" class="thumb">
+      </div>
+    </section>
 
-				<input type="tel" id="phone" name="phone" placeholder="Phone">
+    <!-- Meet Our Team -->
+    <section>
+      <h4>Meet Our Team</h4>
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/hOWG-2MGzHk?si=CtC0cOWnyeC1itek" 
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </section>
 
-				<textarea id="message" name="message" rows="4" cols="50" placeholder="Message"></textarea><br><br>
+    <!-- Contact Us -->
+    <section>
+      <h4>Contact Us</h4>
+      <form action="#" method="post">
+        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone">
+        <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
 
-				<input type="submit" value="Submit">
-			</form>
-	</section>
-</main>
-		
-	
-		<footer>
-			 <p>&copy; 2025 Design My Home. All rights reserved.</p>
-		</footer>
+    <!-- ===== Lightbox / Modal ===== -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <!-- Full-size slides -->
+        <div class="mySlides"><div class="numbertext">1 / 9</div><img src="./images/living_room_1.jpg" alt="Modern living room"></div>
+        <div class="mySlides"><div class="numbertext">2 / 9</div><img src="./images/living_room_2.jpg" alt="Cozy living room"></div>
+        <div class="mySlides"><div class="numbertext">3 / 9</div><img src="./images/living_room_3.jpg" alt="Bright living room"></div>
+        <div class="mySlides"><div class="numbertext">4 / 9</div><img src="./images/bedroom_1.jpg" alt="Elegant bedroom"></div>
+        <div class="mySlides"><div class="numbertext">5 / 9</div><img src="./images/bedroom_2.jpg" alt="Minimalist bedroom"></div>
+        <div class="mySlides"><div class="numbertext">6 / 9</div><img src="./images/bedroom_3.jpg" alt="Cozy bedroom"></div>
+        <div class="mySlides"><div class="numbertext">7 / 9</div><img src="./images/kitchen_1.jpg" alt="Stylish kitchen"></div>
+        <div class="mySlides"><div class="numbertext">8 / 9</div><img src="./images/kitchen_2.jpg" alt="Modern kitchen"></div>
+        <div class="mySlides"><div class="numbertext">9 / 9</div><img src="./images/kitchen_3.jpg" alt="Contemporary kitchen"></div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container"><p id="caption"></p></div>
+
+        <!-- Thumbnails -->
+        <div class="thumbnail-row">
+          <img class="demo" src="./images/living_room_1.jpg" onclick="currentSlide(1)" alt="Modern living room">
+          <img class="demo" src="./images/living_room_2.jpg" onclick="currentSlide(2)" alt="Cozy living room">
+          <img class="demo" src="./images/living_room_3.jpg" onclick="currentSlide(3)" alt="Bright living room">
+          <img class="demo" src="./images/bedroom_1.jpg" onclick="currentSlide(4)" alt="Elegant bedroom">
+          <img class="demo" src="./images/bedroom_2.jpg" onclick="currentSlide(5)" alt="Minimalist bedroom">
+          <img class="demo" src="./images/bedroom_3.jpg" onclick="currentSlide(6)" alt="Cozy bedroom">
+          <img class="demo" src="./images/kitchen_1.jpg" onclick="currentSlide(7)" alt="Stylish kitchen">
+          <img class="demo" src="./images/kitchen_2.jpg" onclick="currentSlide(8)" alt="Modern kitchen">
+          <img class="demo" src="./images/kitchen_3.jpg" onclick="currentSlide(9)" alt="Contemporary kitchen">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Design My Home. All rights reserved.</p>
+  </footer>
 </body>
 </html>
